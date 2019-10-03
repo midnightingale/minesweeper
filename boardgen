@@ -1,0 +1,19 @@
+
+
+var boardLength;
+var board; //this is an array of objects
+
+for(var y=0; x<boardLength; x++){
+	for(var x=0)
+
+
+}
+
+
+class Space {
+	//xCoord, yCoord; //commented bc keeps giving error but i think is bc playcode
+	constructor(x, y){
+		this.xCoord = x;
+		this.yCoord = y;
+	}
+}
