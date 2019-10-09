@@ -1,3 +1,2 @@
 # minesweeper
-hello
-it me
+# 1. global variables etc. are being added to the boardgen file
