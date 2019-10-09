@@ -10,7 +10,7 @@ for(var i = 0; i < mineCount; i++){
  for(var j=0; j<mineCount;j++){
    for( var k = j; k < mineCount; k++){
      if(k != j){
-       if(JSON.stringify(isMine[k])==JSON.stringify(isMine[j])) {
+       if(JSON.stringify(minePlace[k])==JSON.stringify(minePlace[j])) {
        minePlace[j] = [Math.floor(Math.random()*boardLength),
        Math.floor(Math.random()*boardLength)]
        
