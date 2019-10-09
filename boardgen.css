@@ -1,0 +1,32 @@
+body {
+  background: #161616;
+  color: #bdbdbd;
+  font-weight: 300;
+  height: 100vh;
+  margin: 10;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Baloo Tammudu, roboto;
+}
+
+#timer, #newgame, #flags{
+  display: inline;
+  font-family: Baloo Tammudu, roboto;
+  height: 6vh;
+}
+
+.dist{
+  text-align: center; 
+}
+
+img {
+  width: 56px;
+  height: 48px;
+}
+
+h1 {
+  font-weight: 200;
+  font-style: 26px;
+  margin: 10px;
+}
