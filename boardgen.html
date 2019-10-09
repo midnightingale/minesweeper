@@ -1,11 +1,17 @@
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Baloo Tammudu' rel='stylesheet'>
 </head>
 <body>
 <div>
   <h1 id="msg">Minesweeper</h1>
-  <div> <input id="newgame" type="button" class="number" value="new game"> </div>
-  <div id = "space-container"> </div>
+  <div class="wrapbar"> 
+    <div id="flags" class="dist" style="float: left;"> Flags: 10 </div>
+    <input id="newgame" type="button" class="di" style="margin: 0 auto;" value="New Game">
+    <div id="timer" class="dist" style="float: right;"> Time: 0:00 </div>
+  </div>
+  
+  <div id = "space-container"></div> 
 </div>
 </body>
 <script src="script.js"></script>
