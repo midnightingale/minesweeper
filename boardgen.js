@@ -7,7 +7,7 @@ var board = []; //this is an array of objects
 var hammy = "http://bit.do/hammyboi"
 
 $('#newgame').click(function(){ 
-boardLength = 5; //test condition
+boardLength = 9; //default board size
 
 for(var y=0; y<boardLength; y++){
 
@@ -15,12 +15,12 @@ for(var y=0; y<boardLength; y++){
 	if (!board[y]) board[y] = new Array (boardLength);
 
 	for(var x=0; x<boardLength; x++){
-		if (!board[y][x]) board[y][x] = new Space(x,y); //creating a nested array
-		$('#space-container').append('<input id="space" type="button" class="space">');
+		if (!board[y][x]) board[y][x] = new Space(x,y);
+		$('#space-container').append(`<img src=${hammy} id="space">`);
 	}
-	$('#space-container').append('</div>'); //ends row of spaces
+	$('#space-container').append('</div>');
 	}
-	//console.log(board); (useful for testing)
+	//console.log(board);
 })
 
 class Space {
