@@ -1,0 +1,53 @@
+$('space').click(function(){
+if(this.revealedBlank == false){
+  if(this.isMined(xCoord,yCoord) == true){
+  //death(){}
+}
+  if(this.isFlagged == false && this.isQuestion == false){
+    parse(xCoord, yCoord);
+  }
+}
+}
+)
+
+function isMined(px, py){
+  for(var i=0;i<minePlace.length();i++){
+    if(px == JSON.stringify(minePlace[0][i]) && py == JSON.stringify(minePlace[1][i])){
+      return true;
+    }
+   }
+  return false;
+}
+
+function parse(px, py){
+  if (isMined(px, py) == true || isFlagged(px,py)==true || isQuestion(px,py)==true){
+    return false;
+  }
+  else{ 
+    reveal(px, py);
+    parse(px + 1, py);
+    parse(px, py + 1);
+    parse(px - 1, py); 
+    parse(px, py - 1);
+    parse(px + 1, py + 1);
+    parse(px - 1, py - 1);
+    parse(px + 1, py - 1);
+    parse(px - 1, py + 1);
+  }
+}
+
+function reveal(px, py){
+  var numDisplay=0;
+  for(var i=-1;i<2;i++){
+    for(var j=-1;j<2;j++){
+      for(var f=0;f<minePlace.length();f++)
+      if(px + i == JSON.stringify(minePlace[0][f]) && py + j == JSON.stringify(minePlace[1][f])){
+      numDisplay++;
+    }
+   }
+  }
+  const data = {
+    message: numDisplay,
+  }
+  $('#space').html(data.message);
+}
