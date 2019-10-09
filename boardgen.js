@@ -3,18 +3,7 @@
 var boardLength;
 var board = []; //this is an array of objects
 
-//------------------------BOARD STATES (PICTURES) -----------------------------------
-var unrevealed = "http://bit.do/hammyboi"
-var revealedblank =
-var flagged =
-var one = 
-var two = 
-var three = 
-var four = 
-var five = 
-var six = 
-var seven = 
-var eight = 
+
 
 
 
@@ -43,3 +32,19 @@ class Space {
 		this.isRevealed = false;
 	}
 }
+
+
+//------------------------BOARD STATES (PICTURES) -----------------------------------
+var unrevealed = "http://bit.do/hammyboi"
+/*var revealedblank =
+var flagged =
+var one = 
+var two = 
+var three = 
+var four = 
+var five = 
+var six = 
+var seven = 
+var eight = 
+
+var deathBlank*/
