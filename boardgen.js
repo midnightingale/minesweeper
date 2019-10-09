@@ -7,7 +7,7 @@ var board = []; //this is an array of objects
 var hammy = "http://bit.do/hammyboi"
 
 $('#newgame').click(function(){ 
-boardLength = 9; //default board size
+boardLength = 10; //default board size
 
 for(var y=0; y<boardLength; y++){
 
