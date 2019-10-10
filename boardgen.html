@@ -2,15 +2,15 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Baloo Tammudu' rel='stylesheet'>
 </head>
-<body>
+<body onLoad="init()">
 <div>
   <h1 id="msg">Minesweeper</h1>
-  <div class="wrapbar"> 
+  <div id="wrapbar" style="margin: 0 auto;"> 
     <div id="flags" class="dist" style="float: left;"> Flags: 10 </div>
     <input id="newgame" type="button" class="di" style="margin: 0 auto;" value="New Game">
     <div id="timer" class="dist" style="float: right;"> Time: 0:00 </div>
   </div>
-  
+  <div> &nbsp; </div>
   <div id = "space-container"></div> 
 </div>
 </body>
