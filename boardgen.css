@@ -1,32 +1,53 @@
 body {
-  background: #161616;
-  color: #bdbdbd;
-  font-weight: 300;
-  height: 100vh;
-  margin: 10;
+  background: #c5e689;
+  color: #240808;
   align-items: center;
-  justify-content: center;
   text-align: center;
   font-family: Baloo Tammudu, roboto;
 }
 
 #timer, #newgame, #flags{
-  display: inline;
+  display: inline-block;
   font-family: Baloo Tammudu, roboto;
-  height: 6vh;
+  font-size: 70%;
+  border: none;
+  border-radius: 12px;
+  width: 30%;
+  outline: none;
+  background:#e0ecb5; 
+  
 }
 
-.dist{
-  text-align: center; 
+#newgame{
+  background:rgb(239, 248, 223);
+  color: rgb(49, 65, 44);
+  width: 19vw;
 }
 
-img {
-  width: 56px;
-  height: 48px;
+#newgame:active{
+  background: rgb(128, 172, 70);
 }
+
+#wrapbar{
+  width: 65vw;
+  float: center;
+  font-size: 3.5vh;
+  height: 3vh;
+}
+
+.space{
+  height: width;
+  width: 5%;
+  margin: 0 5px;
+}
+
+#space-container{
+  height: 50vh;
+}
+
 
 h1 {
   font-weight: 200;
-  font-style: 26px;
-  margin: 10px;
+  margin: 0px;
+  color: rgb(2, 2, 2)
 }
