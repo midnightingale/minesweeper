@@ -1,3 +1,4 @@
+//this file is obsolete
 var mineCount=12
 var boardLength=8
 var minePlace=[]
